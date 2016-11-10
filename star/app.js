@@ -5,6 +5,6 @@
     'use strict';
 
     angular
-        .module("starwars",["ngResource"]);
+        .module("starwars",["ngResource","ngRoute"]);
 
 })();

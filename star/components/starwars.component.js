@@ -8,7 +8,7 @@
         bindings: {
           category: "="
         },
-        templateUrl: "./components/star.html",
+        templateUrl: "./components/starwars.component.html",
         controller: starCtrl
     };
 

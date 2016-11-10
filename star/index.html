@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Star Wars</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <base href="/">
 </head>
 <body>
 
-<star-wars category="'people'" ></star-wars>
-<star-wars category="'starships'"></star-wars>
-<star-wars category="'planets'"></star-wars>
+<header>
+  <nav>
+    <ul>
+      <li><a href="/people">People</a></li>
+      <li><a href="/planets">Planets</a></li>
+      <li><a href="/starships">Starships</a></li>
+    </ul>
+  </nav>
+</header>
+<main ng-view></main>
 
-
+<script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 <script src="app.js"></script>
 <script src="components/starwars.component.js"></script>
+<script src="routes/routes.js"></script>
+<script src="components/hello.js"></script>
 <script src="factories/starwars.factory.js"></script>
 </body>
 </html>
